@@ -147,4 +147,4 @@ keeping.
 
    include google analytics snippet
 
-<!-- I've made a change and committed it to the new-feature branch -->
+I've made a change and committed it to the new-feature branch
