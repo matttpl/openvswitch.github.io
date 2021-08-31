@@ -11,7 +11,7 @@ Website for Open vSwitch. This is written in Jekyll. We use:
 
 We do not use:
 
-- blog specific mechanisms: we do not have blogs, we do not have posts.  We do
+- blog specific mechanisms: we do not have blogs, we do not have posts. We do
   not have a `_post/` directory.
 
 ## Development
@@ -64,7 +64,7 @@ example the side widgets are on `_include/side_widgets.html`.
 - Style
 
   The navbar is only a nested series of `<ul><li>` elements (this is in line
-  with current best practices).  The navbar display behavior (display/hide
+  with current best practices). The navbar display behavior (display/hide
   submenus) is implemented only in CSS, in a style tag inside header.html. It
   should support an unlimited number of nested submenus
 
@@ -73,7 +73,7 @@ example the side widgets are on `_include/side_widgets.html`.
   Jekyll (at least the safe version used by github pages) does not support a
   way to generate a page list. Therefore we manually list the pages that we
   want to appear in the navbar (in order) in `_data/nav.yml`. The url attribute
-  is relative to the parent page.  A bit of templating magic (recursively
+  is relative to the parent page. A bit of templating magic (recursively
   including `menulist.html`, with different `include.*` variables) allows us to
   generate the `<ul><li>` elements
 
@@ -110,7 +110,7 @@ keeping.
 
 ## Open issues
 
-1) Releases
+1. Releases
 
    This repository currently does not host ovs releases as the oldwebsite did.
 
@@ -118,14 +118,14 @@ keeping.
 
    a) do not host them. Let github generate the files through tags
 
-      + simple
+   - simple
 
-      - Is github reliable? does the file change? Some user might expect it to
-        have a consistent hash
+   * Is github reliable? does the file change? Some user might expect it to
+     have a consistent hash
 
    b) upload them to the website git repository
 
-2) /cgi-bin/man
+2. /cgi-bin/man
 
    There was a script on the old website that generated updated (from master)
    man pages (in PDF and HTML). There are some links to these pages somewhere
@@ -133,9 +133,9 @@ keeping.
 
    a) upload static version of the manpages
 
-      - they do not get updated
+   - they do not get updated
 
-3) /pipermail/
+3. /pipermail/
 
    `https://www.openvswitch.org/pipermail` is the mailman archive. If
    we use github hosting, openvswitch.org will be a CNAME for
@@ -143,6 +143,8 @@ keeping.
    have control over `openvswitch.github.io` we cannot redirect
    `/pipermail/*` to something else.
 
-4) google analytics
+4. google analytics
 
    include google analytics snippet
+
+<!-- I've made a change and committed it to the new-feature branch -->
